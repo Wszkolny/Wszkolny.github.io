@@ -40,7 +40,7 @@ img
 .center
 {
     display: grid;
-    grid-template-columns: 50% 50%;
+   grid-auto-flow: column;
     
 }
 p
@@ -70,8 +70,12 @@ a:hover
 {
     display: block !important;
 }
-@media only screen and (max-width: 900px) 
+@media(max-width: 900px) 
 {
+    .center
+    {
+        grid-auto-flow: row;
+    }
     img
     {
         width: 200px;
